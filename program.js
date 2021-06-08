@@ -26,7 +26,7 @@ function ToDoList(){
         if(index === 2){
             const selected = readlineSync.keyInSelect(todolist, "What do you want to check/uncheck?");
             if(selected !== -1){
-                todolist[selected].includes("🔴") ? todolist[selected] = "🟢" + todolist[selected].substring(1) : "🔴" + todolist[selected].substring(1)
+                todolist[selected].includes('🔴') ? todolist[selected] = '🟢' + todolist[selected].substring(1) : todolist[selected] = '🔴' + todolist[selected].substring(1)
             }
         }
 
